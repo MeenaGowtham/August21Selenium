@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results skipped="0" failed="0" ignored="2" total="3" passed="1">
+  <reporter-output>
+  </reporter-output>
+  <suite name="Default suite" duration-ms="37282" started-at="2021-09-27T00:38:34 PDT" finished-at="2021-09-27T00:39:12 PDT">
+    <groups>
+    </groups>
+    <test name="Default test" duration-ms="37282" started-at="2021-09-27T00:38:34 PDT" finished-at="2021-09-27T00:39:12 PDT">
+      <class name="com.training.test.home.HomeTest">
+        <test-method status="PASS" signature="beforeMethod()[pri:0, instance:com.training.test.home.HomeTest@12cdcf4]" name="beforeMethod" is-config="true" duration-ms="7843" started-at="2021-09-27T00:38:34 PDT" finished-at="2021-09-27T00:38:42 PDT">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeMethod -->
+        <test-method status="PASS" signature="selectMySettings()[pri:0, instance:com.training.test.home.HomeTest@12cdcf4]" name="selectMySettings" duration-ms="28766" started-at="2021-09-27T00:38:42 PDT" finished-at="2021-09-27T00:39:11 PDT">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- selectMySettings -->
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:com.training.test.home.HomeTest@12cdcf4]" name="tearDown" is-config="true" duration-ms="574" started-at="2021-09-27T00:39:11 PDT" finished-at="2021-09-27T00:39:12 PDT">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- com.training.test.home.HomeTest -->
+    </test> <!-- Default test -->
+  </suite> <!-- Default suite -->
+</testng-results>
