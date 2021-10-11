@@ -1,14 +1,46 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
-<suite guice-stage="DEVELOPMENT" name="Failed suite [Default suite]">
-  <test thread-count="5" name="Default test(failed)">
+<suite guice-stage="DEVELOPMENT" name="Failed suite [Suite]">
+  <test thread-count="5" name="Test(failed)">
     <classes>
-      <class name="com.training.test.home.HomeTest">
+      <class name="com.training.test.myprofile.MyProfileTest">
+        <methods>
+          <include name="selectMyProfile"/>
+          <include name="tearDown"/>
+          <include name="beforeMethod"/>
+        </methods>
+      </class> <!-- com.training.test.myprofile.MyProfileTest -->
+      <class name="com.training.test.accounts.AccountsTest">
+        <methods>
+          <include name="createNewViewAccounts"/>
+          <include name="mergeAccounts"/>
+          <include name="editViewLinkAccounts"/>
+          <include name="beforeMethod"/>
+          <include name="tearDown"/>
+        </methods>
+      </class> <!-- com.training.test.accounts.AccountsTest -->
+      <class name="com.training.test.random.RandomTest">
+        <methods>
+          <include name="customizeTabs"/>
+          <include name="beforeMethod"/>
+          <include name="tearDown"/>
+        </methods>
+      </class> <!-- com.training.test.random.RandomTest -->
+      <class name="com.training.test.login.LoginTest">
+        <methods>
+          <include name="loginWithValidCredentials"/>
+          <include name="beforeMethod"/>
+          <include name="tearDown"/>
+        </methods>
+      </class> <!-- com.training.test.login.LoginTest -->
+      <class name="com.training.test.contacts.ContactsTest">
         <methods>
           <include name="beforeMethod"/>
-          <include name="selectMySettings"/>
+          <include name="tearDown"/>
+          <include name="recentlyCreatedContact"/>
+          <include name="myContactsView"/>
         </methods>
-      </class> <!-- com.training.test.home.HomeTest -->
+      </class> <!-- com.training.test.contacts.ContactsTest -->
     </classes>
-  </test> <!-- Default test(failed) -->
-</suite> <!-- Failed suite [Default suite] -->
+  </test> <!-- Test(failed) -->
+</suite> <!-- Failed suite [Suite] -->

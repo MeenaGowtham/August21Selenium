@@ -37,10 +37,13 @@ public class LoginTest extends BaseTest {
 
 	@Test
 	public void loginWithValidCredentials() throws InterruptedException {
+		String expectedPageTitle = "Home Page ~ Salesforce - Developer Edition";
 		enterTextFromKeyboard(login.username, "meego@tekarch.com");
 		enterTextFromKeyboard(login.password, "Scooby18");
 		clickButton(login.loginButton);
-		validateMessage(driver.getTitle(), "Home Page ~ Salesforce - Developer Edition");
+		waitForElementToDisappear(login.loginButton);
+		String actualPageTitle = driver.getTitle();
+		validateMessage(actualPageTitle, expectedPageTitle);
 	}
 
 	@Test
