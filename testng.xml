@@ -3,7 +3,16 @@
 <suite name="Suite">
   <test thread-count="5" name="Test">
     <classes>
+      <class name="com.training.test.contacts.ContactsTest"/>
+      <class name="com.training.test.developerconsole.DeveloperConsoleTest"/>
       <class name="com.training.test.login.LoginTest"/>
+      <class name="com.training.test.mysettings.MySettingsTest"/>
+      <class name="com.training.test.home.HomeTest"/>
+      <class name="com.training.test.myprofile.MyProfileTest"/>
+      <class name="com.training.test.random.RandomTest"/>
+      <class name="com.training.test.accounts.AccountsTest"/>
+      <class name="com.training.test.opportunities.OpportunitiesTest"/>
+      <class name="com.training.test.leads.LeadsTest"/>
     </classes>
   </test> <!-- Test -->
 </suite> <!-- Suite -->

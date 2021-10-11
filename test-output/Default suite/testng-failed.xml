@@ -3,12 +3,12 @@
 <suite guice-stage="DEVELOPMENT" name="Failed suite [Default suite]">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="com.training.test.home.HomeTest">
+      <class name="com.training.test.random.RandomTest">
         <methods>
+          <include name="bookRecurranceEvent"/>
           <include name="beforeMethod"/>
-          <include name="selectMySettings"/>
         </methods>
-      </class> <!-- com.training.test.home.HomeTest -->
+      </class> <!-- com.training.test.random.RandomTest -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->
